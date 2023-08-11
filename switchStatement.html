@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Switch Statement in JavaScript  -->
+    Switch Statement in JavaScript
+    <br />
+    <h1>Enter Your Choice</h1>
+    <ul>
+      <li>Addition</li>
+      <li>Subtraction</li>
+      <li>Multiplation</li>
+      <li>Dividation</li>
+    </ul>
+    <input type="text" placeholder="Enter Text" id="choices" />
+    <button onclick="myFun()">Click Me</button>
+    <script>
+      function myFun() {
+        var choice = document.getElementById("choices").value;
+        switch (choice) {
+          case "Addition":
+            var a = 10;
+            var b = 30;
+            var sum = a + b;
+            document.write("add muber" + " " + sum);
+            break;
+          case "Subtraction":
+            var a = 10;
+            var b = 30;
+            var sub = a - b;
+            document.write("Subtraction muber" + " " + sub);
+            break;
+          case "Multiplation":
+            var a = 10;
+            var b = 30;
+            var mult = a * b;
+            document.write("Multiplation muber" + " " + mult);
+            break;
+          case "Dividation":
+            var a = 10;
+            var b = 30;
+            var divide = a / b;
+            document.write("Dividation muber" + " " + divide);
+        }
+      }
+    </script>
+  </body>
+</html>
